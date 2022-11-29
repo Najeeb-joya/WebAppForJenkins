@@ -4,12 +4,12 @@ pipeline{
     maven "Maven-3.8.6"
   }
   stages('Clean & Install'){
-      steps{
+      steps {
         sh 'mvn clean install'
       }
   }
   stages('Package & Build'){
-    steps{
+    steps {
       sh 'mvn package'
     }
   }
